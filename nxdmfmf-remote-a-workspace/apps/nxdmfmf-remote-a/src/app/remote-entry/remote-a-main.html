@@ -1,37 +1,52 @@
-<div class="remote-a-container">
-  <div class="remote-a-hero rounded-xl">
-    <h1 class="remote-a-title">
+<div
+  class="flex flex-col gap-4 max-w-5xl mx-auto p-4 md:p-6"
+  data-testid="remote-a-main"
+>
+  <header
+    class="rounded-xl p-8 text-center bg-green-100 border border-green-200"
+  >
+    <h1 class="text-4xl font-bold text-slate-800 mb-4">
       <span class="text-purple-600">Angular Nx</span> (multi-repo) Micro-frontend App nxdmfmf-remote-<span class="text-purple-600">a</span>
     </h1>
-    <p class="remote-a-subtitle">
+    <p class="text-lg text-slate-600 leading-relaxed">
       This page is loaded from repo: multirepo-nx-mf-dyn-modfed-rem-a workspace: nxdmfmf-remoce-a-workspace app: nxdmfmf-remote-<span class="text-purple-600">a</span>
     </p>
     <p class="text-base text-slate-600 mt-2">Last update date: {{ lastUpdate }}</p>
-  </div>
+  </header>
 
-  <div class="remote-a-content">
-    <div class="remote-a-card rounded-xl">
-      <h2 class="card-title">About This Page</h2>
-      <p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <section
+      class="rounded-xl p-8 bg-green-100 border border-green-200"
+    >
+      <h2 class="text-xl font-bold text-slate-800 mb-4">About This Page</h2>
+      <p class="text-base text-slate-800 leading-relaxed">
         This is an independent microfrontend application that can be developed, tested, and deployed separately from the host
         application and other remotes.
       </p>
-    </div>
+    </section>
 
-    <div class="remote-a-card rounded-xl">
-      <h2 class="card-title">Features</h2>
-      <ul class="feature-list">
+    <section
+      class="rounded-xl p-8 bg-green-100 border border-green-200"
+    >
+      <h2 class="text-xl font-bold text-slate-800 mb-4">Features</h2>
+      <ul
+        class="list-[square] list-inside text-base text-slate-800 leading-relaxed space-y-2 marker:text-slate-800 pl-5"
+      >
         <li>Standalone Angular components</li>
         <li>OnPush change detection</li>
         <li>Modern Angular <span class="text-purple-600">v??.??.?</span> best practices</li>
         <li>Dynamic module federation</li>
         <li>Independent deployment</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="remote-a-card rounded-xl">
-      <h2 class="card-title">Technology Stack</h2>
-      <ul class="tech-stack-list">
+    <section
+      class="rounded-xl p-8 bg-green-100 border border-green-200"
+    >
+      <h2 class="text-xl font-bold text-slate-800 mb-4">Technology Stack</h2>
+      <ul
+        class="list-[square] list-inside text-base text-slate-800 leading-relaxed space-y-2 marker:text-slate-800 pl-5"
+      >
         <li>Angular <span class="text-purple-600">v??.??.?</span></li>
         <li>Nx <span class="text-purple-600">v??.??.?</span></li>
         <li>Dynamic Module Federation</li>
@@ -40,6 +55,6 @@
         <li>Vite</li>
         <li>Vitest</li>
       </ul>
-    </div>
+    </section>
   </div>
 </div>

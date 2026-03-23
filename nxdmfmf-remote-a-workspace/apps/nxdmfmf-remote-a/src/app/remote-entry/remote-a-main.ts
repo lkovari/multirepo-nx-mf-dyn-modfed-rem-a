@@ -1,4 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+} from '@angular/core';
 
 const LAST_UPDATE = '2025-03-22 15:43:00';
 
@@ -6,7 +10,8 @@ const LAST_UPDATE = '2025-03-22 15:43:00';
   selector: 'app-remote-a-main',
   imports: [],
   templateUrl: './remote-a-main.html',
-  styleUrl: './remote-a-main.css',
+  styleUrl: '../../styles.css',
+  encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RemoteAMain {
