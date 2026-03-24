@@ -6,6 +6,8 @@
     "build": "nx build nxdmfmf-remote-a",
     "serve": "nx serve nxdmfmf-remote-a",
     "serve-static": "NX_DAEMON=false nx run nxdmfmf-remote-a:serve-static",
+    "gh-build": "nx build nxdmfmf-remote-a --configuration=ghpages",
+    "gh-deploy": "pnpm gh-build && cp dist/apps/nxdmfmf-remote-a/index.html dist/apps/nxdmfmf-remote-a/404.html && touch dist/apps/nxdmfmf-remote-a/.nojekyll && gh-pages -d dist/apps/nxdmfmf-remote-a -t",
     "reset": "nx reset"
   },
   "private": true,

@@ -52,6 +52,26 @@
           "extractLicenses": false,
           "sourceMap": true,
           "namedChunks": true
+        },
+        "ghpages": {
+          "baseHref": "/multirepo-nx-mf-dyn-modfed-rem-a/",
+          "deployUrl": "/multirepo-nx-mf-dyn-modfed-rem-a/",
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
+            }
+          ],
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "apps/nxdmfmf-remote-a/webpack.prod.config.ts"
+          }
         }
       },
       "defaultConfiguration": "production"
