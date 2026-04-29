@@ -21,7 +21,10 @@
             "input": "apps/nxdmfmf-remote-a/public"
           }
         ],
-        "styles": ["apps/nxdmfmf-remote-a/src/styles.css"],
+        "styles": [
+          "primeicons/primeicons.css",
+          "apps/nxdmfmf-remote-a/src/styles.css"
+        ],
         "customWebpackConfig": {
           "path": "apps/nxdmfmf-remote-a/webpack.config.ts"
         }
